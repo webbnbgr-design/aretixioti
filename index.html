@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="el" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Λογιστικό Γραφείο - Αρετή Ι. Χιώτη | Πύργος Ηλείας</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        corporate: {
+                            dark: '#121212',
+                            slate: '#1e293b',
+                            navy: '#1e3a8a',
+                            accent: '#92400e', // Bronze touch
+                            light: '#f8fafc',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hero-pattern {
+            background-color: #121212;
+            background-image: radial-gradient(#1e3a8a 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-corporate-light text-corporate-slate font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-200/50 h-20">
+        <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-xl md:text-2xl font-bold tracking-tight text-corporate-dark">Αρετή Ι. Χιώτη</span>
+                <span class="text-[10px] md:text-xs uppercase tracking-widest text-corporate-navy font-semibold">Λογιστικό & Φοροτεχνικό Γραφείο</span>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#services" class="hover:text-corporate-navy transition-colors">Υπηρεσίες</a>
+                <a href="#about" class="hover:text-corporate-navy transition-colors">Το Γραφείο</a>
+                <a href="#contact" class="hover:text-corporate-navy transition-colors">Επικοινωνία</a>
+            </div>
+
+            <div class="flex items-center">
+                <a href="tel:2621023509" class="bg-corporate-navy text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-opacity-90 transition-all shadow-lg shadow-corporate-navy/20 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    26210 23509
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-40 pb-24 px-6 hero-pattern overflow-hidden min-h-[90vh] flex items-center">
+        <!-- Abstract gradient circles for modern look -->
+        <div class="absolute top-1/4 -right-24 w-96 h-96 bg-corporate-navy/20 rounded-full blur-[120px]"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-corporate-accent/10 rounded-full blur-[120px]"></div>
+        
+        <div class="max-w-7xl mx-auto w-full relative z-10 text-center md:text-left">
+            <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-8 fade-in">
+                <div class="flex text-amber-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <span class="text-white/80 text-xs font-medium tracking-wide">5.0/5 Google Reviews</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-7xl font-bold text-white mb-8 leading-[1.1] max-w-4xl fade-in" style="animation-delay: 0.1s">
+                Σύγχρονες Λογιστικές & Φοροτεχνικές Λύσεις
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-300 mb-12 max-w-2xl leading-relaxed fade-in font-light" style="animation-delay: 0.2s">
+                Προσωπική προσέγγιση, απόλυτη εγκυρότητα και σύγχρονες υπηρεσίες στον Πύργο Ηλείας. Πτυχιούχος Λογιστικής ΑΤΕΙ Θεσσαλονίκης με εμπειρία που εμπνέει εμπιστοσύνη.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center gap-4 fade-in" style="animation-delay: 0.3s">
+                <a href="tel:6985684708" class="w-full sm:w-auto bg-white text-corporate-dark px-10 py-5 rounded-full text-lg font-bold hover:bg-slate-100 transition-all flex items-center justify-center gap-3 shadow-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Καλέστε μας
+                </a>
+                <a href="#services" class="w-full sm:w-auto text-white border border-white/20 px-10 py-5 rounded-full text-lg font-semibold hover:bg-white/5 transition-all text-center">
+                    Οι Υπηρεσίες μας
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-bold text-corporate-dark mb-4 tracking-tight">Ολοκληρωμένες Υπηρεσίες</h2>
+                    <div class="h-1.5 w-24 bg-corporate-navy rounded-full"></div>
+                </div>
+                <p class="text-slate-500 max-w-md text-lg">
+                    Παρέχουμε υψηλού επιπέδου υπηρεσίες προσαρμοσμένες στις ανάγκες κάθε ιδιώτη και επιχείρησης.
+                </p>
+            </div>
+
+            <!-- Bento Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+                <!-- Card 1 -->
+                <div class="md:col-span-8 bg-white p-10 rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-xl transition-all group overflow-hidden relative">
+                    <div class="absolute -right-12 -bottom-12 w-48 h-48 bg-slate-50 rounded-full group-hover:scale-125 transition-transform duration-500"></div>
+                    <div class="relative z-10 h-full flex flex-col">
+                        <div class="w-14 h-14 bg-corporate-navy/5 text-corporate-navy flex items-center justify-center rounded-2xl mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-corporate-dark mb-4">Φορολογικές Δηλώσεις</h3>
+                        <p class="text-slate-500 text-lg leading-relaxed max-w-md">
+                            Σύνταξη και υποβολή δηλώσεων φορολογίας εισοδήματος φυσικών και νομικών προσώπων με ακρίβεια και φορολογικό προγραμματισμό.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="md:col-span-4 bg-corporate-navy p-10 rounded-3xl shadow-xl shadow-corporate-navy/20 flex flex-col justify-between text-white relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700"></div>
+                    <div>
+                        <div class="w-14 h-14 bg-white/10 text-white flex items-center justify-center rounded-2xl mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="m17 5-5-3-5 3"/><path d="m17 19-5 3-5-3"/><path d="M2 12h20"/><path d="m5 7-3 5 3 5"/><path d="m19 7 3 5-3 5"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Τήρηση Βιβλίων</h3>
+                        <p class="text-white/70">
+                            Πλήρης μηχανογραφική τήρηση βιβλίων όλων των κατηγοριών για ατομικές επιχειρήσεις και εταιρείες.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="md:col-span-4 bg-white p-10 rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-slate-100 text-corporate-accent flex items-center justify-center rounded-2xl mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-corporate-dark mb-3">Μισθοδοσία</h3>
+                        <p class="text-slate-500">
+                            Διαχείριση εργατικών και ασφαλιστικών θεμάτων, έκδοση μισθοδοσίας και υποβολή ΑΠΔ.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="md:col-span-8 bg-slate-900 border border-slate-800 p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all relative overflow-hidden flex items-center">
+                    <div class="relative z-10 w-full flex flex-col md:flex-row items-center justify-between gap-10">
+                        <div class="flex-1">
+                            <div class="w-14 h-14 bg-white/5 text-corporate-accent flex items-center justify-center rounded-2xl mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Υποστήριξη Επιχειρήσεων</h3>
+                            <p class="text-slate-400 max-w-sm">
+                                Στρατηγικές συμβουλές, ίδρυση εταιρειών, μετατροπές και φορολογικός σχεδιασμός για τη βιωσιμότητα της επιχείρησής σας.
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div class="bg-corporate-accent/20 border border-corporate-accent/30 p-8 rounded-full">
+                                <span class="text-6xl font-bold text-corporate-accent">5.0</span>
+                                <div class="text-white/60 text-xs text-center mt-1 uppercase tracking-tighter">Rating</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="relative">
+                    <div class="aspect-[4/5] bg-slate-100 rounded-[2.5rem] overflow-hidden shadow-2xl relative z-10">
+                        <!-- Placeholder for professional photo -->
+                        <div class="w-full h-full flex items-center justify-center bg-corporate-slate text-white/10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                    </div>
+                    <!-- Decorative element behind photo -->
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-corporate-navy/5 rounded-full blur-3xl"></div>
+                    <div class="absolute bottom-10 right-10 bg-white p-8 rounded-3xl shadow-xl z-20 max-w-[200px] border border-slate-100">
+                        <div class="text-4xl font-bold text-corporate-navy mb-1">15+</div>
+                        <div class="text-xs text-slate-500 uppercase tracking-widest leading-tight">Έτη Επαγγελματικής Εμπειρίας</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-corporate-navy font-bold uppercase tracking-widest text-sm mb-6 inline-block bg-corporate-navy/5 px-4 py-1.5 rounded-full">Το Γραφείο</h4>
+                    <h2 class="text-3xl md:text-5xl font-bold text-corporate-dark mb-8 leading-tight tracking-tight">Αρετή Ι. Χιώτη</h2>
+                    
+                    <div class="space-y-6 text-lg text-slate-600 leading-relaxed font-light">
+                        <p>
+                            Το γραφείο μας αποτελεί έναν σύγχρονο κόμβο παροχής λογιστικών και φοροτεχνικών υπηρεσιών στον Πύργο Ηλείας. Με θεμέλιο τις σπουδές στο <span class="font-semibold text-corporate-dark">ΑΤΕΙ Θεσσαλονίκης</span> (Πτυχιούχος Λογιστικής), η Αρετή Χιώτη προσφέρει εξειδικευμένες γνώσεις και λύσεις.
+                        </p>
+                        <p>
+                            Πιστεύουμε στην προσωπική επαφή και στην κρυσταλλένια καθαρότητα των συναλλαγών. Η τεχνογνωσία μας συνδυάζεται με τη χρήση των πλέον σύγχρονων πληροφοριακών συστημάτων για την άμεση και έγκυρη ενημέρωση των πελατών μας.
+                        </p>
+                        <p>
+                            Η βαθμολογία <span class="font-bold text-corporate-dark">5.0/5 στα Google Reviews</span> αποτελεί για εμάς τη μεγαλύτερη επιβράβευση και δέσμευση για τη συνέχεια της ποιοτικής μας πορείας.
+                        </p>
+                    </div>
+
+                    <div class="mt-12 flex items-center gap-6 p-6 border border-slate-100 rounded-3xl bg-slate-50/50">
+                        <div class="w-12 h-12 bg-amber-400/20 text-amber-600 flex items-center justify-center rounded-full shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <div>
+                            <div class="font-bold text-corporate-dark">Certified Accounting Professional</div>
+                            <div class="text-sm text-slate-500 tracking-wide">Μέλος Οικονομικού Επιμελητηρίου Ελλάδος</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contact" class="py-32 px-6 bg-corporate-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Info Column -->
+                <div class="lg:col-span-5 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-3xl md:text-5xl font-bold text-corporate-dark mb-10 tracking-tight">Επικοινωνήστε μαζί μας</h2>
+                        
+                        <div class="space-y-10">
+                            <!-- Address -->
+                            <div class="flex gap-6">
+                                <div class="w-12 h-12 shrink-0 bg-white shadow-sm border border-slate-100 rounded-2xl flex items-center justify-center text-corporate-navy">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs uppercase tracking-widest text-slate-400 font-bold mb-1">Διεύθυνση</h4>
+                                    <p class="text-lg font-medium text-corporate-dark leading-snug">Πατρών 46 & Παπαφλέσσα,<br>Πύργος Ηλείας, 271 31</p>
+                                </div>
+                            </div>
+
+                            <!-- Phones -->
+                            <div class="flex gap-6">
+                                <div class="w-12 h-12 shrink-0 bg-white shadow-sm border border-slate-100 rounded-2xl flex items-center justify-center text-corporate-navy">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <h4 class="text-xs uppercase tracking-widest text-slate-400 font-bold mb-1">Τηλέφωνα</h4>
+                                    <a href="tel:2621023509" class="text-xl font-bold text-corporate-dark hover:text-corporate-navy transition-colors">26210 23509</a>
+                                    <a href="tel:6985684708" class="text-xl font-bold text-corporate-dark hover:text-corporate-navy transition-colors">69856 84708</a>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex gap-6">
+                                <div class="w-12 h-12 shrink-0 bg-white shadow-sm border border-slate-100 rounded-2xl flex items-center justify-center text-corporate-navy">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs uppercase tracking-widest text-slate-400 font-bold mb-1">Email</h4>
+                                    <a href="mailto:aretixioti@yahoo.gr" class="text-lg font-medium text-corporate-dark hover:text-corporate-navy transition-all border-b border-corporate-navy/20">aretixioti@yahoo.gr</a>
+                                </div>
+                            </div>
+
+                            <!-- Hours -->
+                            <div class="flex gap-6">
+                                <div class="w-12 h-12 shrink-0 bg-white shadow-sm border border-slate-100 rounded-2xl flex items-center justify-center text-corporate-navy">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs uppercase tracking-widest text-slate-400 font-bold mb-1">Ωράριο</h4>
+                                    <p class="text-corporate-dark font-medium leading-relaxed">Δευτέρα - Παρασκευή: 09:00 - 14:00 & 18:00 - 21:00<br>Σάββατο: Κατόπιν Ραντεβού</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Column -->
+                <div class="lg:col-span-7 bg-white p-4 rounded-[2rem] shadow-xl border border-slate-200/50">
+                    <div class="w-full h-[500px] rounded-[1.5rem] overflow-hidden">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.5042851457194!2d21.4398183119106!3d37.67262031024346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1360c70e3037213d%3A0xe5a36371801089e0!2zzqDOsc-Ez4HPjs69IDQ2LCDOoM-Nz4HOs86_z4IgMjcxIDMx!5e0!3m2!1sel!2sgr!4v1713811496000!5m2!1sel!2sgr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-corporate-dark pt-24 pb-12 px-6 text-white overflow-hidden relative">
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-corporate-navy/10 rounded-full blur-[150px]"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                <div class="lg:col-span-1">
+                    <div class="mb-8">
+                        <span class="text-2xl font-bold block">Αρετή Ι. Χιώτη</span>
+                        <span class="text-xs uppercase tracking-widest text-corporate-accent font-semibold">Logistiko Grafeio</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-xs">
+                        Σύγχρονες λογιστικές και φοροτεχνικές υπηρεσίες με επίκεντρο τον άνθρωπο και την επιχείρηση.
+                    </p>
+                </div>
+                
+                <div>
+                    <h5 class="font-bold text-lg mb-8">Πλοήγηση</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a href="#services" class="hover:text-white transition-colors">Υπηρεσίες</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">Το Γραφείο</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Επικοινωνία</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-lg mb-8">Επικοινωνία</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            26210 23509
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            aretixioti@yahoo.gr
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-lg mb-8">Social</h5>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-slate-500 text-xs">
+                <p>© <script>document.write(new Date().getFullYear())</script> Αρετή Ι. Χιώτη. All rights reserved.</p>
+                <p>Developed by <a href="#" class="text-white hover:text-corporate-accent transition-colors">WebBnb</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
